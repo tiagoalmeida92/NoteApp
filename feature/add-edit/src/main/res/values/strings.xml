@@ -1,0 +1,8 @@
+<resources>
+    <string name="feature_add_edit_title_hint">Title</string>
+    <string name="feature_add_edit_description_hint">Description</string>
+    <string name="feature_add_edit_image_hint">Image url</string>
+    <string name="feature_add_edit_save_action">Save</string>
+    <string name="feature_add_edit_delete_action">Delete</string>
+    <string name="feature_add_edit_error_save">The title and description cannot be empty.</string>
+</resources>

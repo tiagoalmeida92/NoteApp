@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="12dp"
+        android:transitionName="sharedElement"
+        app:cardBackgroundColor="?colorSecondary"
+        app:cardCornerRadius="12dp"
+        app:contentPadding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/add_edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/feature_add_edit_title_hint"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/add_edit_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/feature_add_edit_description_hint"
+                android:maxLines="2"
+                app:layout_constraintTop_toBottomOf="@id/add_edit_title" />
+
+            <EditText
+                android:id="@+id/add_edit_image_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/feature_add_edit_image_hint"
+                app:layout_constraintTop_toBottomOf="@id/add_edit_description" />
+
+            <Button
+                android:id="@+id/add_edit_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/feature_add_edit_save_action"
+                app:layout_constraintTop_toBottomOf="@id/add_edit_image_url" />
+
+            <Button
+                android:id="@+id/add_edit_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?colorSecondaryVariant"
+                android:text="@string/feature_add_edit_delete_action"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/add_edit_save" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

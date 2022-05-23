@@ -1,0 +1,8 @@
+rootProject.name = "NoteApp"
+include ':app'
+include ':core'
+include ':core:database-room'
+include ':feature'
+include ':feature:list'
+include ':ui'
+include ':feature:add-edit'

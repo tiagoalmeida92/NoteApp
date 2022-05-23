@@ -1,0 +1,4 @@
+<resources>
+    <string name="list_empty_state">Add your first note on the button below ⬇️</string>
+    <string name="feature_list_edited_tag">Edited</string>
+</resources>

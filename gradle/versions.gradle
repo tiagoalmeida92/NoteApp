@@ -1,0 +1,31 @@
+ext {
+    //App
+    compile_sdk_version = 32
+    min_sdk_version = 21
+    target_sdk_version = 32
+
+    //Libraries
+    appcompat_version = '1.4.1'
+    activity_ktx_version = '1.3.0'
+    picasso_version = '2.71828'
+    room_version = '2.3.0'
+    coroutines_version = '1.6.1'
+    coroutines_android_version = '1.5.0'
+    three_ten_version = '1.3.1'
+    core_ktx_version = '1.6.0'
+    picasso_version = '2.8'
+    constraint_layout_version = '2.1.3'
+    material_version = '1.6.0'
+
+    //Hilt
+    hilt_version = '2.41'
+
+    //Testing
+    junit_version = '4.13.2'
+    mockito_version = '3.2.0'
+    assertj_version = '3.15.0'
+    three_ten_testing_version = '1.5.1'
+    espresso_version = '3.4.0'
+    junit_runner_version = '1.1.3'
+    androidX_test_version = '1.4.0'
+}

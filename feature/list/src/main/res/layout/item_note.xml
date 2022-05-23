@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="?colorSecondary"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="12dp"
+    app:contentPadding="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_note_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/item_note_image"
+            tools:text="This is a note title" />
+
+        <TextView
+            android:id="@+id/item_note_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/item_note_title"
+            android:maxLines="2"
+            tools:text="Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper quam id sapien luctus sagittis. Phasellus accumsan dapibus tincidunt. Etiam condimentum est et neque faucibus, sed porttitor ligula accumsan. Sed at elit leo. Curabitur ullamcorper sem lobortis, viverra nibh ut, semper tortor. Etiam pharetra cursus justo at dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas." />
+
+        <TextView
+            android:id="@+id/item_note_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_note_description"
+            tools:text="28/05/2022" />
+
+        <TextView
+            android:id="@+id/item_note_edited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feature_list_edited_tag"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_note_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
