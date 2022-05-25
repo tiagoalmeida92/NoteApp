@@ -1,5 +1,4 @@
-## :loudspeaker: This PR adds
-
+## :loudspeaker: TODO App
 - New UI flows to view notes and create, edit and delete notes
 - 2 Activity screens
   - MainActivity(list) and AddEditActivity

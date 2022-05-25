@@ -1,6 +1,6 @@
 package com.task.noteapp.database.room
 
-import com.task.noteapp.Note
+import com.task.noteapp.note.Note
 import com.task.noteapp.database.room.model.NoteRoom
 
 class NoteConverter {

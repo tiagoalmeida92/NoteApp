@@ -3,8 +3,8 @@ package com.task.noteapp.feature.add.edit
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.task.noteapp.Note
-import com.task.noteapp.NoteDataSource
+import com.task.noteapp.note.Note
+import com.task.noteapp.note.NoteDataSource
 import com.tiago.feature.navigation.Navigator.EXTRA_NOTE
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher

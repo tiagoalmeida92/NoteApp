@@ -4,7 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.view.View
 import androidx.core.app.ActivityOptionsCompat
-import com.task.noteapp.Note
+import com.task.noteapp.note.Note
 
 object Navigator {
 

@@ -2,6 +2,7 @@ rootProject.name = "NoteApp"
 include ':app'
 include ':core'
 include ':core:database-room'
+include ':core:analytics-log'
 include ':feature'
 include ':feature:list'
 include ':ui'

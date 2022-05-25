@@ -7,11 +7,10 @@ import android.view.View.VISIBLE
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.coroutineScope
-import com.task.noteapp.Note
+import com.task.noteapp.note.Note
 import com.task.noteapp.databinding.ActivityMainBinding
 import com.tiago.feature.navigation.Navigator
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint

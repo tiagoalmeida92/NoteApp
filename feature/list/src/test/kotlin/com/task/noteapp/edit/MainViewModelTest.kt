@@ -1,7 +1,7 @@
 package com.task.noteapp.edit
 
-import com.task.noteapp.Note
-import com.task.noteapp.NoteDataSource
+import com.task.noteapp.note.Note
+import com.task.noteapp.note.NoteDataSource
 import com.task.noteapp.list.MainViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flowOf

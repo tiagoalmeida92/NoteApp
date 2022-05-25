@@ -6,7 +6,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.coroutineScope
-import com.task.noteapp.Note
+import com.task.noteapp.note.Note
 import com.task.noteapp.feature.add.edit.databinding.ActivityAddEditBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch

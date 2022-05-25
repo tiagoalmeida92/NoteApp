@@ -1,4 +1,4 @@
-package com.task.noteapp
+package com.task.noteapp.note
 
 import org.threeten.bp.OffsetDateTime
 import java.io.Serializable

@@ -1,7 +1,7 @@
 package com.task.noteapp.database.room
 
-import com.task.noteapp.Note
-import com.task.noteapp.NoteDataSource
+import com.task.noteapp.note.Note
+import com.task.noteapp.note.NoteDataSource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 

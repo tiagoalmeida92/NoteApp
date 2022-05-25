@@ -1,9 +1,10 @@
 package com.task.noteapp.di
 
-import com.task.noteapp.note.NoteDataSource
+import com.task.noteapp.analytics.Analytics
 import com.task.noteapp.database.room.AppDatabase
 import com.task.noteapp.database.room.NoteDao
-import com.task.noteapp.database.room.RoomNoteDataSource
+import com.task.noteapp.log.AnalyticsLog
+import com.task.noteapp.log.LogcatLog
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -12,17 +13,12 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class NoteDatabaseModule {
+class AnalyticsModule {
 
     @Singleton
     @Provides
-    fun provideDao(appDatabase: AppDatabase): NoteDao {
-        return appDatabase.noteDao()
+    fun provideAnalytics(): Analytics {
+        return AnalyticsLog(LogcatLog)
     }
 
-    @Singleton
-    @Provides
-    fun provideNoteDatabase(dao: NoteDao): NoteDataSource {
-        return RoomNoteDataSource(dao)
-    }
 }

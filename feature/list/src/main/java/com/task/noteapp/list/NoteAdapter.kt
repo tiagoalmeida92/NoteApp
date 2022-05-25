@@ -7,7 +7,7 @@ import android.view.View.VISIBLE
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import com.task.noteapp.Note
+import com.task.noteapp.note.Note
 import com.task.noteapp.databinding.ItemNoteBinding
 import org.threeten.bp.format.DateTimeFormatter
 import org.threeten.bp.format.DateTimeFormatterBuilder

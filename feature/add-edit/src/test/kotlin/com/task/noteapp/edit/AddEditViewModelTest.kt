@@ -1,8 +1,8 @@
 package com.task.noteapp.edit
 
 import androidx.lifecycle.SavedStateHandle
-import com.task.noteapp.Note
-import com.task.noteapp.NoteDataSource
+import com.task.noteapp.note.Note
+import com.task.noteapp.note.NoteDataSource
 import com.task.noteapp.feature.add.edit.AddEditViewModel
 import com.task.noteapp.feature.add.edit.ErrorViewState
 import com.tiago.feature.navigation.Navigator.EXTRA_NOTE
