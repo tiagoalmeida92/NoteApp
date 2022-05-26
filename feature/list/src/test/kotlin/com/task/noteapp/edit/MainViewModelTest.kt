@@ -1,5 +1,6 @@
 package com.task.noteapp.edit
 
+import com.task.noteapp.analytics.Analytics
 import com.task.noteapp.note.Note
 import com.task.noteapp.note.NoteDataSource
 import com.task.noteapp.list.MainViewModel
@@ -20,6 +21,7 @@ import org.threeten.bp.OffsetDateTime
 class MainViewModelTest {
 
     private val noteDataSource: NoteDataSource = mock()
+    private val analytics: Analytics = mock()
     private lateinit var viewModel: MainViewModel
     private val dispatcher = StandardTestDispatcher()
 
@@ -32,7 +34,7 @@ class MainViewModelTest {
     fun `WHEN viewmodel init THEN datasource getAll is called`() = runTest(dispatcher) {
         val items = listOf(aNote(), aNote())
         given(noteDataSource.getAll()).willReturn(flowOf(items))
-        viewModel = MainViewModel(noteDataSource, dispatcher)
+        viewModel = MainViewModel(noteDataSource, dispatcher, analytics)
 
         advanceUntilIdle()
         assertThat(viewModel.items.value.size).isEqualTo(items.size)
