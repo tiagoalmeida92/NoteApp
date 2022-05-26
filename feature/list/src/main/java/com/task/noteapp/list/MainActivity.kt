@@ -6,7 +6,9 @@ import android.view.View.GONE
 import android.view.View.VISIBLE
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.coroutineScope
+import androidx.lifecycle.repeatOnLifecycle
 import com.task.noteapp.note.Note
 import com.task.noteapp.databinding.ActivityMainBinding
 import com.tiago.feature.navigation.Navigator
@@ -31,8 +33,10 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnNoteClicked {
 
     private fun observeViewModel() {
         lifecycle.coroutineScope.launch {
-            viewModel.items.collect {
-                render(it)
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.items.collect {
+                    render(it)
+                }
             }
         }
     }
